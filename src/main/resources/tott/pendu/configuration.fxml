@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane hgap="10.0" prefHeight="651.0" prefWidth="800.0" vgap="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tott.pendu.Controller3">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="800.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <GridPane layoutX="-2.0" layoutY="150.0" prefHeight="312.0" prefWidth="738.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="314.0" minWidth="10.0" prefWidth="298.79998779296875" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="329.20001220703125" minWidth="10.0" prefWidth="231.60000000000002" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="329.20001220703125" minWidth="10.0" prefWidth="207.60000000000008" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="74.60000000000001" minHeight="10.0" prefHeight="74.60000000000001" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="157.79999389648438" minHeight="10.0" prefHeight="43.79999389648438" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="157.79999389648438" minHeight="10.0" prefHeight="43.79999389648438" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="161.00000610351566" minHeight="10.0" prefHeight="49.400006103515636" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="161.00000610351566" minHeight="10.0" prefHeight="56.20001220703125" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="Addinput" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="deleteWordField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button mnemonicParsing="false" onAction="#showtree" text="View" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Button contentDisplay="RIGHT" mnemonicParsing="false" onAction="#Search" prefHeight="26.0" prefWidth="66.0" text="Search" textAlignment="RIGHT" GridPane.columnIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#Add" prefHeight="26.0" prefWidth="63.0" text="Add" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#Delete" text="Delete" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <GridPane prefHeight="74.0" prefWidth="253.0" GridPane.columnIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="searchWordField" alignment="TOP_CENTER" prefHeight="26.0" prefWidth="206.0" GridPane.rowIndex="1" />
+                        <Label fx:id="resultLabel" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search word" textAlignment="RIGHT" wrappingWidth="259.89019775390625" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add word" textAlignment="RIGHT" wrappingWidth="257.7015380859375" GridPane.rowIndex="1" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Delete word" textAlignment="RIGHT" wrappingWidth="258.84136962890625" GridPane.rowIndex="3" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="View tree" textAlignment="RIGHT" wrappingWidth="259.7828369140625" GridPane.rowIndex="4" />
+                  <TextField fx:id="Addhint" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add hint" textAlignment="RIGHT" wrappingWidth="253.71485900878906" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <Text layoutX="292.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Configuration">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Button layoutX="384.0" layoutY="497.0" mnemonicParsing="false" onAction="#changeScene3" text="Menu">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font></Button>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
